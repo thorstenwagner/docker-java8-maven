@@ -49,6 +49,6 @@ RUN yum clean all
 # configure symbolic links for the java and javac executables
 #RUN update-alternatives --install /usr/bin/java java $JAVA_HOME/bin/java 20000 && update-alternatives --install /usr/bin/javac javac $JAVA_HOME/bin/javac 20000
 
-CMD [""]
+#CMD [""]
 
 
