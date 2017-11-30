@@ -29,7 +29,7 @@ RUN rm -f /tmp/apache-maven-3.3.9.tar.gz
 ENV MAVEN_HOME /opt/maven
 
 # remove download archive files
-RUN yum clean
+RUN yum clean all
 
 # set shell variables for java installation
 ENV java_version 1.8.0_101
