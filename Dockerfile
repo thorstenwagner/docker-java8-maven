@@ -1,4 +1,4 @@
-# Ubuntu 16.04
+# CentOS 7
 # Oracle Java 1.8.0_101 64 bit
 # Maven 3.3.9
 
