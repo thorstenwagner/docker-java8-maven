@@ -15,7 +15,7 @@ RUN yum update
 # install wget
 RUN yum install wget -y
 
-RUN yum install java-1.8.0-openjdk xvfb firefox -y
+RUN yum install java-1.8.0-openjdk xorg-x11-server-Xvfb firefox -y
 
 # get maven 3.3.9
 RUN wget --no-verbose -O /tmp/apache-maven-3.3.9.tar.gz http://archive.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
