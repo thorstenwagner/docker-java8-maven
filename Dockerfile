@@ -2,7 +2,7 @@
 # Oracle Java 1.8.0_101 64 bit
 # Maven 3.3.9
 
-FROM ubuntu:16.04
+FROM centos:centos7
 
 MAINTAINER Kai Winter (https://github.com/kaiwinter)
 
@@ -29,7 +29,7 @@ RUN rm -f /tmp/apache-maven-3.3.9.tar.gz
 ENV MAVEN_HOME /opt/maven
 
 # remove download archive files
-RUN apt-get clean
+RUN yum clean all
 
 # set shell variables for java installation
 ENV java_version 1.8.0_101
