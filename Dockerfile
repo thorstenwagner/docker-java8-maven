@@ -7,13 +7,13 @@ FROM ubuntu:16.04
 MAINTAINER Kai Winter (https://github.com/kaiwinter)
 
 # this is a non-interactive automated build - avoid some warning messages
-ENV DEBIAN_FRONTEND noninteractive
+ENV CENTOS_FRONTEND noninteractive
 
 # update dpkg repositories
-RUN apt-get update 
+RUN yum update 
 
 # install wget
-RUN apt-get install -y wget
+RUN yum install wget
 
 # get maven 3.3.9
 RUN wget --no-verbose -O /tmp/apache-maven-3.3.9.tar.gz http://archive.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
